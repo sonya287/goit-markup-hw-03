@@ -11,29 +11,35 @@
   --secondary-background: #f5f4fa;
   --header-footer-background: #2f303a;
   --accent-color: #2196f3;
+  --border-header: #ececec;
+  --border-footer: rgba(255, 255, 255, 0.1);
+  --footer-bgc: #2f303a;
+  --secondary-f-lightgrey-color: rgba(255, 255, 255, 0.6);
+  --secondary-flightgrey-color: rgba(255, 255, 255, 0.4);
 }
 
 body {
   color: var(--primary-text-color);
-  background-color: var(--primary-background);
+  background: var(--primary-background);
   font-family: Roboto, sans-serif;
   color: var(--primary-grey-color);
   letter-spacing: 0.03em;
-  border: 5px solid rgb(71, 255, 132);
-  margin-left: 200px;
-  margin-right: 200px;
 }
 
 .container {
+  width: 1200px;
   margin-left: 0;
   margin-right: 0;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid 2px #ff0000;
+  /*outline: solid 2px #ff0000;*/
 }
 
-li {
+ul {
   list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-inline-start: 0px;
 }
 
 a {
@@ -42,22 +48,40 @@ a {
 
 /* шапка сайта */
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-info {
+  display: inline-block;
+  align-items: flex-end;
+}
+
 .header > .container {
   align-items: center;
   display: block;
 }
 
 .header {
-  border-bottom: 1px solid #3122b8;
+  border-bottom: 1px solid var(--border-header);
 }
 
-.header .site-nav {
+.site-nav {
   display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-style: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.header .page-header-logo {
+.page-header-logo {
   display: block;
-  margin-right: 94px;
+  margin-right: 85px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -65,37 +89,30 @@ a {
   text-decoration: none;
 }
 
-.header .link {
+.info-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
+  /*display: block;
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
+  text-decoration: none;*/
 }
 
-.header .adress-link {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin: 48px;
+.info > .info-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.adress-link {
+  margin-left: 0px;
   display: flex;
-  min-width: 135px;
-  height: 16px;
-  justify-content: flex-end;
-  outline: 2px solid blueviolet;
 }
-
-.header .info {
-  display: flex;
-  margin-left: auto;
-}
-
-/*.info .info-item:not(:last-child) {
-  margin-right: 50px;
-}*/
 
 .logo {
   color: #2196f3;
