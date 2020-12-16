@@ -28,19 +28,20 @@ body {
 
 .container {
   width: 1200px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
   /*outline: solid 2px #ff0000;*/
 }
 
-ul {
+/*ul {
   list-style: none;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-inline-start: 0px;
-}
+}*/
 
 a {
   text-decoration: none;
@@ -159,28 +160,37 @@ a {
   color: var(--accent-color);
 }
 
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 /* section 1  Hero*/
 
 .hero {
   background-color: var(--header-footer-background);
-}
-
-.hero .hero-title {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 0;
 }
 
 .hero-title {
+  margin-bottom: 30px;
+  margin-top: 0;
+
   color: var(--primary-background);
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;*/
 }
 
 .hero-button {
@@ -190,9 +200,13 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  align-items: center;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 200px;
   text-align: center;
-  letter-spacing: 0.06em;
+  border: 1px solid transparent;
 }
 
 /* section 2  Внимание к деталям*/
@@ -201,15 +215,43 @@ a {
   visibility: hidden;
 }
 
+.container {
+  /*outline: 1px solid tomato;*/
+}
+
+ul {
+  list-style: none;
+}
+
+.attention {
+  padding-top: 0;
+}
+
 .attention-title {
   color: var(--secondary-black-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10;
+}
+
+.features-list p {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+
+.attention-text {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Чем мы занимаемся */
+
+.engage {
+  padding-top: 0;
+}
 
 .engage-title {
   color: var(--primary-text-color);
@@ -219,6 +261,38 @@ a {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50;
+}
+
+.engage-picture li {
+  padding-right: 27px;
+  display: inline-block;
+  text-align: center;
+}
+
+.team {
+  padding: 0;
+}
+
+.team-item {
+  display: inline-block;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.team-title {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50;
 }
 
 .team-text {
@@ -226,8 +300,29 @@ a {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.team-text {
+  margin-top: 0;
+  margin-bottom: 30;
+}
+
+.team-subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  /*text-align: center;*/
+  color: var(--primary-text-color);
+
+  margin-top: 0;
+  margin-bottom: 10;
 }
 
 /* footer */
@@ -240,14 +335,46 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
+
+  width: 1200px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 252px;
 }
 
-.footer-text-logo {
+.footer-nav {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   font-style: normal;
+
+  padding-top: 60px;
+  padding-left: 215px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+.last-address {
+  padding-top: 0;
+  padding-bottom: 60;
+  padding-left: 215px;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.number {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.footer-text-logo {
+  margin-top: 60px;
 }
 
 .footer .contact {
