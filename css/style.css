@@ -54,18 +54,15 @@ a {
   align-items: center;
 }
 
-.flex-info {
-  display: inline-block;
-  align-items: flex-end;
-}
-
-.header > .container {
-  align-items: center;
-  display: block;
+.flex-info .box {
+  display: flex;
+  margin-left: auto;
 }
 
 .header {
   border-bottom: 1px solid var(--border-header);
+  align-items: center;
+  display: block;
 }
 
 .site-nav {
@@ -90,8 +87,9 @@ a {
   text-decoration: none;
 }
 
-.info-item:not(:last-child) {
-  margin-right: 50px;
+.info {
+  display: flex;
+  margin-right: auto;
 }
 
 .site-nav .link {
@@ -106,13 +104,32 @@ a {
   text-decoration: none;*/
 }
 
-.info > .info-item:not(:last-child) {
-  margin-right: 30px;
+/*.info .info-item {
+  display: flex;
+  margin-right: 50px;
+}
+
+.info .info-item + .info-item {
+  margin-left: 50px;
+}*/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.info-item {
+  margin-left: 50px;
 }
 
 .adress-link {
   margin-left: 0px;
+  margin-right: 0px;
   display: flex;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .logo {
@@ -224,7 +241,11 @@ ul {
 }
 
 .attention {
+  display: flex;
   padding-top: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .attention-title {
@@ -238,6 +259,7 @@ ul {
 }
 
 .features-list p {
+  display: flex;
   margin-top: 0;
   margin-bottom: 94px;
 }
@@ -251,6 +273,9 @@ ul {
 
 .engage {
   padding-top: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .engage-title {
@@ -266,10 +291,10 @@ ul {
   margin-bottom: 50;
 }
 
-.engage-picture li {
+.engage-picture .engage-item {
   padding-right: 27px;
   display: inline-block;
-  text-align: center;
+  justify-content: center;
 }
 
 .team {
