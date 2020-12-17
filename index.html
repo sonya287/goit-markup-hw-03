@@ -20,9 +20,9 @@
             ><span class="logo">Web</span><span class="logotip">Studio</span></a
           >
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="#" class="link">Контакты</a></li>
+            <li class="page"><a href="./index.html" class="link">Студия</a></li>
+            <li class="page"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="page"><a href="#" class="link">Контакты</a></li>
           </ul>
         </nav>
         <div class="flex-info box">
@@ -48,13 +48,15 @@
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-button" type="button">Заказать услугу</button>
       </section>
+
+
       <!--Section 2 внимание к деталям-->
       <section class="attention">
         <div class="container">
           <h2 class="visually-hidden">Плюсы студии</h2>
           <!--заголовок скрыть при стилизации-->
           <ul class="features-list">
-            <li>
+            <li class="items">
               <h3 class="attention-title">Внимание к деталям</h3>
               <p class="attention-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -92,17 +94,17 @@
         <ul class="engage-picture">
           <li class="engage-item">
             <a href="#"
-              ><img src="./images/blok-shema.jpg" alt="блок-схема" width="370"
+              ><img class="image-block" src="./images/blok-shema.jpg" alt="блок-схема" width="370"
             /></a>
           </li>
           <li class="engage-item">
             <a href="#"
-              ><img src="./images/smartfon.jpg" alt="смартфон" width="370"
+              ><img class="image-block" src="./images/smartfon.jpg" alt="смартфон" width="370"
             /></a>
           </li>
           <li class="engage-item">
             <a href="#"
-              ><img src="./images/palitra.jpg" alt="палитра" width="370"
+              ><img class="image-block" src="./images/palitra.jpg" alt="палитра" width="370"
             /></a>
           </li>
         </ul>
@@ -110,9 +112,10 @@
 
       <!--Section 4 наша команда-->
       <section class="team">
+        <div class="container-team">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-item">
-          <li>
+          <li class="team-img">
             <img
               src="./images/product-designer.jpg"
               alt="дизайнер"
@@ -121,7 +124,7 @@
             <h3 class="team-subtitle">Игорь Демьяненко</h3>
             <p class="team-text">Product Designer</p>
           </li>
-          <li>
+          <li class="team-img">
             <img
               src="./images/fronted-developer.jpg"
               alt="программистка"
@@ -130,41 +133,33 @@
             <h3 class="team-subtitle">Ольга Репина</h3>
             <p class="team-text">Frontend Developer</p>
           </li>
-          <li>
+          <li class="team-img">
             <img src="./images/marketing.jpg" alt="маркетолог" width="270" />
             <h3 class="team-subtitle">Николай Тарасов</h3>
             <p class="team-text">Marketing</p>
           </li>
-          <li>
+          <li class="team-img">
             <img src="./images/ui-designer.jpg" alt="ермаков" width="270" />
             <h3 class="team-subtitle">Михаил Ермаков</h3>
             <p class="team-text">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!--Footer Подвал-->
     <footer class="footer">
       <div class="footer-nav">
-        <a class="footer-text-logo" href="./index.html"
-          ><span class="logo">Web</span><span class="logo-text">Studio</span></a
+        <a class="logo" href="./index.html"
+          >Web<span class="logo-text">Studio</span></a
         >
-      </div>
-      <address>
-        <div class="last-address">
-          <ul class="number">
-            <li class="address">г. Киев, пр-т Леси Украинки, 26</li>
-            <li>
-              <a class="contact" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </div>
+      <address class="address" id="address">
+          <a class="map">г. Киев, пр-т Леси Украинки, 26</a>
+          <a class="contact" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+          <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
       </address>
+      </div>
     </footer>
   </body>
 </html>
