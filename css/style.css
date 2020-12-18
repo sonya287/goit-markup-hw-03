@@ -291,7 +291,7 @@ ul {
   text-align: center;
 
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 94px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -342,11 +342,10 @@ ul {
 
 .team {
   text-align: center;
-  padding-top: 0;
 
   background: var(--secondary-background);
 
-  margin-top: 0px;
+  margin-top: 94px;
   margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -387,6 +386,7 @@ ul {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  padding-top: 94px;
 }
 
 .team .team-text {
