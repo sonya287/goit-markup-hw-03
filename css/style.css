@@ -40,10 +40,13 @@ a {
 }
 
 /* шапка сайта */
-
+/*header {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}*/
 .header {
   display: flex;
   align-items: center;
+
   /* outline: solid 2px #ff0000;*/
 }
 
@@ -237,6 +240,10 @@ ul {
 .attention {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 86px;
+  padding-bottom: 94px;
+  padding: right 215px;
+  padding: left 215px;
 }
 
 .attention.container {
@@ -275,8 +282,6 @@ ul {
 
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 86px;
-  padding-bottom: 10px;
 }
 
 .features-list p {
@@ -291,7 +296,6 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   text-align: left;
-  padding-bottom: 94px;
 }
 
 /* Чем мы занимаемся */
@@ -351,8 +355,8 @@ ul {
 .team {
   text-align: center;
   background: var(--secondary-background);
-  margin: 0;
-  padding-bottom: 94px;
+  /*margin-top: 94px;*/
+  margin-bottom: 50px;
 }
 
 .container-team {
@@ -395,9 +399,8 @@ ul {
   line-height: 1.2;
   text-align: center;
 
+  margin-bottom: 50px;
   padding-top: 94px;
-  padding-bottom: 50px;
-  margin: 0;
 }
 
 .team .team-text {
@@ -441,7 +444,7 @@ footer {
 
 .footer-nav {
   display: block;
-  justify-content: left;
+  /*justify-content: left;*/
   width: 1200px;
 
   margin-left: auto;
