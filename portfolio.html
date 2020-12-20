@@ -14,7 +14,7 @@
 
   <body>
     <!--Верхняя строка Шапка сайта-->
-    <header>
+    <header class="border-header">
       <div class="container header">
         <nav class="flex">
           <a href="./index.html" class="page-header-logo"><span class="logo">Web</span><span
@@ -41,17 +41,17 @@
     <main>
       <!--Section  Кнопки + Все-->
       <section class="portfolio">
+        <h1 hidden>Портфолио</h1>
         <div class="container padding">
-           <h1 hidden>Портфолио</h1>
+          <h2 class="visually-hidden section-title">Наши проекты</h2>
            <ul class="filter">
               <li class="filter-items"><button class="button" type="button">Все</button></li>
               <li class="filter-items"><button class="button" type="button">Приложения</button></li>
               <li class="filter-items"><button class="button" type="button">Дизайн</button></li>
               <li class="filter-items"><button class="button" type="button">Маркетинг</button></li>
               <li class="filter-items"><button class="button" type="button">Веб-сайты</button></li>
-        </ul></div>
-        <div class="portfolio-content">
-          <ul class="content">
+        </ul>
+         <ul class="content">
             <li class="content-items">
               <a class="link" href="#">
                 <img src="./images/technokryak.jpg"
@@ -138,10 +138,10 @@
     </main>
 
     <!--Footer Подвал-->
-    <footer class="footer">
-      <div class="footer-nav">
-        <a href="./index.html" lang="en" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
-        <address><a>г. Киев, пр-т Леси Украинки, 26</a>
+    <footer>
+      <div class="container footer">
+        <a class="logo" href="./index.html">Web<span class="logo-text">Studio</span></a>
+        <address class="address"><a class="map">г. Киев, пр-т Леси Украинки, 26</a>
           <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
           <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
