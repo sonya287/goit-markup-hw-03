@@ -25,6 +25,7 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 header {
@@ -394,6 +395,7 @@ img {
 
 .team .team-title {
   margin-bottom: 50px;
+  margin-top: 0;
 
   color: var(--primary-text-color);
   font-family: Roboto;
